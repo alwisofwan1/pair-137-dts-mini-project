@@ -7,10 +7,13 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <MoviesSlide
+        title={`What's Popular`}
+        fetchUrl={requests.requestPopular}
+      />
+      <br />
+      <br />
       <MoviesSlide title='Upcoming' fetchUrl={requests.requestUpcoming} />
-      <br />
-      <br />
-      <MoviesSlide title='Popular' fetchUrl={requests.requestPopular} />
       <br />
       <br />
       <MoviesSlide title='Trending' fetchUrl={requests.requestTrending} />

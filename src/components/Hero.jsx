@@ -8,19 +8,14 @@ import { Pagination, Navigation } from 'swiper';
 
 const Main = () => {
   const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   // const movie = movies[Math.floor(Math.random() * movies.length)];
 
   useEffect(() => {
-    setLoading(true);
-    axios.get(requests.requestNowPlaying).then((response) => {
+    axios.get(requests.requestTrending).then((response) => {
       setMovies(response.data.results);
-      setLoading(false);
     });
   }, []);
-
-  console.log('loading', loading);
 
   // const truncateString = (str, num) => {
   //   if (str?.length > num) {
