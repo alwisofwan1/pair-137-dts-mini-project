@@ -13,7 +13,7 @@ const Carousel = (props) => {
             />
           </div>
           <div className='absolute w-full gap-y-2 h-full top-0 left-0 bg-gradient-to-r from-black via-[#040B16] to-transparent'>
-            <div className='h-full sm:w-1/2 flex flex-col items-start justify-center p-4 md:p-8 '>
+            <div className='h-full sm:w-1/2 flex flex-col items-start justify-center p-4 md:p-16 '>
               <h1 className='text-3xl md:text-5xl font-bold text-left'>
                 {props?.title}
               </h1>

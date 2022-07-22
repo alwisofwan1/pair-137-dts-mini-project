@@ -3,14 +3,14 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer class='text-center lg:text-left bg-black text-[#808080] max-w-6xl my-0 mx-auto'>
-      <div class='mx-6 py-10 text-center md:text-left'>
+      <div class='mx-6 pt-10 text-center md:text-left'>
         <div class='grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
           <div class=''>
             <p class='mb-4'>Audio</p>
             <p class='mb-4'>Media Center</p>
             <p class='mb-4'>Security</p>
             <p class='mb-6'>Contact Center</p>
-            <button className='inline-block px-6 py-2 border-2 border-gray-800 '>
+            <button className='inline-block px-6 py-2 border-2 border-[#808080] '>
               Service Code
             </button>
           </div>
