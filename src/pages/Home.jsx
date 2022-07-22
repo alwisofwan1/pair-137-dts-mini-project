@@ -1,6 +1,7 @@
 import MoviesSlide from 'components/MoviesSlide';
 import React from 'react';
 import Hero from '../components/Hero';
+import Footer from 'components/Footer';
 import requests from 'Request';
 
 const Home = () => {
@@ -20,6 +21,10 @@ const Home = () => {
       <br />
       <br />
       <MoviesSlide title='Top Rated' fetchUrl={requests.requestTopRated} />
+      <br />
+      <br />
+      <br />
+      <Footer />
     </>
   );
 };
